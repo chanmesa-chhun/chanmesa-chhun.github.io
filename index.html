@@ -1,24 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Chanmesa Chhun | Developer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chanmesa Chhun | Portfolio</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; line-height: 1.6; }
-    h1 { color: #333; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #222;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      background: #222;
+      color: white;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, I'm Chanmesa 👋</h1>
-  <p>I'm a software development student at AUT with a passion for web development, APIs, and problem-solving.</p>
-  
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Adaptive Network Management</strong> – API & cell tower ranking project with 2degrees</li>
-    <li><strong>Tunetalk</strong> – A MERN-based social music web app</li>
-  </ul>
+  <header>
+    <h1>Chanmesa Chhun</h1>
+    <p>Software Developer | Network & Cybersecurity</p>
+  </header>
 
-  <h2>Contact</h2>
-  <p>Email: mesachan50@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/chanmesa-chhun">chanmesa-chhun</a></p>
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a curious and adaptable learner currently completing my Bachelor of Computer and Information Sciences at Auckland University of Technology, majoring in Software Development with a minor in Network and Cybersecurity. I thrive in collaborative environments, enjoy solving problems, and bring structure to chaotic tasks. I value clear communication, continuous learning, and teamwork.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <h3>Adaptive Network Management: Cell Tower Prioritization in Crisis (2024–Present)</h3>
+      <ul>
+        <li>Collaborated with the 2degrees team to develop API and data processing methods using PHP, Python, QGIS, Google Cloud APIs, and Microsoft Azure</li>
+        <li>Followed Agile methodologies, delivered demos, and provided regular updates</li>
+      </ul>
+
+      <h3>Tunetalk: Social Networking Web App Based on Music (2024)</h3>
+      <ul>
+        <li>Developed a full-stack web app using MERN stack (MongoDB, Express, React, Node.js) and Spotify APIs</li>
+        <li>Used Scrum Agile, GitHub, and Trello to collaborate and manage the project efficiently</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Bachelor of Computer and Information Sciences</strong><br>
+      Auckland University of Technology (2021–2025)</p>
+
+      <p><strong>Bachelor of Science in Mechanical Engineering</strong><br>
+      Rutherford College (2016–2020)</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p><strong>Front of House / Barista</strong><br>
+      Glendene Lunch Bar (2022–2023)</p>
+      <ul>
+        <li>Handled transactions and delivered excellent customer service</li>
+        <li>Prepared coffee and food, especially during high-pressure hours</li>
+      </ul>
+
+      <p><strong>Store Sales Assistant</strong><br>
+      Henderson Tank Juice (2021–2022)</p>
+      <ul>
+        <li>Managed in-store operations and collaborated with team to ensure service quality</li>
+        <li>Maintained hygiene standards and store cleanliness</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Java, Python, PHP, C++, C, JavaScript</li>
+        <li><strong>Frameworks/Stacks:</strong> MERN (MongoDB, Express.js, React, Node.js)</li>
+        <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Tools:</strong> GitHub, QGIS, Trello</li>
+        <li><strong>Cloud & APIs:</strong> Google APIs, Spotify APIs, Microsoft Azure, MongoDB</li>
+        <li><strong>Methodologies:</strong> Agile, Scrum</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:mesachan50@gmail.com">mesachan50@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/chanmesa-chhun" target="_blank">github.com/chanmesa-chhun</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Chanmesa Chhun</p>
+  </footer>
 </body>
 </html>
