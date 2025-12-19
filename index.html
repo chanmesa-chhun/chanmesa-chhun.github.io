@@ -1,116 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chanmesa Chhun | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #222;
-      color: #fff;
-      padding: 2rem 0;
-      text-align: center;
-    }
-    .container {
-      width: 90%;
-      max-width: 900px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: white;
-    }
-    h2, h3 {
-      color: #222;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      background: #222;
-      color: white;
-    }
-  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Chanmesa Chhun</h1>
-    <p>Software Developer | Network & Cybersecurity</p>
-  </header>
+  <main>
 
-  <div class="container">
+    <!-- SECTION 1: HERO -->
+    <section id="top" class="hero-section">
+      <div class="hero-layout">
+
+        <!-- LEFT: TEXT -->
+        <div class="hero-text">
+          <p class="kicker">Final-year BCIS student • Auckland, NZ</p>
+
+          <h1>
+            Hi, I’m <span class="highlight">Chanmesa</span><br />
+            A <span class="highlight-soft">Web & Software Developer</span>
+          </h1>
+
+          <p class="hero-desc">
+            I build clean, mobile-friendly websites and practical software solutions.
+            I enjoy turning ideas into simple, usable products that solve real-world problems.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="mailto:mesachan50@gmail.com">Email Me</a>
+            <a class="btn ghost" href="https://github.com/chanmesa-chhun" target="_blank" rel="noopener">
+              GitHub
+            </a>
+          </div>
+
+          <div class="mini-tags">
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Python</span>
+            <span class="chip">QGIS</span>
+          </div>
+        </div>
+
+        <!-- RIGHT: IMAGE -->
+        <div class="hero-media">
+          <img src="mypic.jpg" alt="Photo of Chanmesa Chhun" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT -->
     <section id="about">
-      <h2>About Me</h2>
-      <p>Hi, I'm Chanmesa — a creative and tech-savvy developer passionate about building meaningful digital solutions. I enjoy transforming ideas into intuitive applications, whether it's a full-stack web app or a data-driven analysis tool. I love collaborating with others, learning new technologies, and making real-world impact through clean and efficient code.</p>
-      <p>When I’m not coding, you’ll find me exploring strategy games, keeping up with tech trends, or out on the football field. This portfolio is a snapshot of the journey so far — thanks for checking it out!</p>
+      <div class="wrap">
+        <h2>About</h2>
+        <p class="muted">
+          Hi, I'm Chanmesa — a creative and tech-savvy developer passionate about building meaningful digital solutions.
+          I enjoy transforming ideas into intuitive applications, whether it's a full-stack web app or a data-driven tool.
+          I love collaborating, learning new technologies, and delivering clean, efficient code.
+          <br /><br />
+          Outside of coding, I enjoy strategy games and football. This portfolio is a snapshot of my work so far.
+        </p>
+      </div>
     </section>
 
+    <!-- SECTION 3: PROJECTS -->
     <section id="projects">
-      <h2>Projects</h2>
-      <h3><a href="https://github.com/chanmesa-chhun/2024-S2-R-D-Adaptive-Network-Management" target="_blank">Adaptive Network Management: Cell Tower Prioritization in Crisis (2024–Present)</a></h3>
-      <ul>
-        <li>Collaborated with the 2degrees team to develop API and data processing methods using PHP, Python, QGIS, Google Cloud APIs, and Microsoft Azure</li>
-        <li>Followed Agile methodologies, delivered demos, and provided regular updates</li>
-      </ul>
+      <div class="wrap">
+        <h2>Projects</h2>
 
-      <h3><a href="https://github.com/chanmesa-chhun/TuneTalk-Mesa" target="_blank">Tunetalk: Social Networking Web App Based on Music (2024)</a></h3>
-      <ul>
-        <li>Developed a full-stack web app using MERN stack (MongoDB, Express, React, Node.js) and Spotify APIs</li>
-        <li>Used Scrum Agile, GitHub, and Trello to collaborate and manage the project efficiently</li>
-      </ul>
+        <div class="grid two">
+          <div class="card">
+            <h3>
+              <a href="https://github.com/chanmesa-chhun/2024-S2-R-D-Adaptive-Network-Management" target="_blank">
+                Adaptive Network Management: Cell Tower Prioritization in Crisis
+              </a>
+            </h3>
+            <p>
+              R&D project with 2degrees focused on prioritising cell towers during disruptions using geospatial analysis and APIs.
+            </p>
+            <ul>
+              <li>Built data processing and ranking workflows (Python, QGIS)</li>
+              <li>Integrated APIs and supported demo/UI pipeline (PHP, cloud services)</li>
+              <li>Worked in Agile/Scrum with regular demos</li>
+            </ul>
+            <div class="tags">
+              <span class="pill">Python</span>
+              <span class="pill">QGIS</span>
+              <span class="pill">PHP</span>
+              <span class="pill">APIs</span>
+              <span class="pill">Azure</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>
+              <a href="https://github.com/chanmesa-chhun/TuneTalk-Mesa" target="_blank">
+                TuneTalk: Social Networking Web App Based on Music
+              </a>
+            </h3>
+            <p>
+              Full-stack web app using Spotify data to power social discovery.
+            </p>
+            <ul>
+              <li>Built with MERN stack</li>
+              <li>Used Spotify APIs</li>
+              <li>Collaborated using Scrum</li>
+            </ul>
+            <div class="tags">
+              <span class="pill">MongoDB</span>
+              <span class="pill">Express</span>
+              <span class="pill">React</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Spotify API</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p><strong>Bachelor of Computer and Information Sciences</strong><br>
-      Auckland University of Technology (2021–2025)</p>
-
-      <p><strong>Bachelor of Science in Mechanical Engineering</strong><br>
-      Rutherford College (2016–2020)</p>
-    </section>
-
+    <!-- SECTION 4: SKILLS -->
     <section id="skills">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Java, Python, PHP, C++, C, JavaScript</li>
-        <li><strong>Frameworks/Stacks:</strong> MERN (MongoDB, Express.js, React, Node.js)</li>
-        <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
-        <li><strong>Tools:</strong> GitHub, QGIS, Trello</li>
-        <li><strong>Cloud & APIs:</strong> Google APIs, Spotify APIs, Microsoft Azure, MongoDB</li>
-        <li><strong>Methodologies:</strong> Agile, Scrum</li>
-      </ul>
+      <div class="wrap">
+        <h2>Technical Skills</h2>
+
+        <div class="grid two">
+          <div class="card">
+            <h3>Languages</h3>
+            <p>Java, Python, PHP, JavaScript, C, C++</p>
+          </div>
+          <div class="card">
+            <h3>Web & Frameworks</h3>
+            <p>HTML, CSS, JavaScript • MERN</p>
+          </div>
+          <div class="card">
+            <h3>Tools</h3>
+            <p>GitHub, Trello, QGIS</p>
+          </div>
+          <div class="card">
+            <h3>Cloud & APIs</h3>
+            <p>Google APIs, Spotify APIs, Microsoft Azure</p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- SECTION 5: CONTACT -->
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:mesachan50@gmail.com">mesachan50@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/chanmesa-chhun" target="_blank">github.com/chanmesa-chhun</a></p>
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="muted">
+          Email: <a href="mailto:mesachan50@gmail.com">mesachan50@gmail.com</a><br />
+          GitHub: <a href="https://github.com/chanmesa-chhun" target="_blank">github.com/chanmesa-chhun</a>
+        </p>
+        <footer>© 2024 Chanmesa Chhun</footer>
+      </div>
     </section>
-  </div>
 
-  <footer>
-    <p>&copy; 2024 Chanmesa Chhun</p>
-  </footer>
+  </main>
 </body>
 </html>
