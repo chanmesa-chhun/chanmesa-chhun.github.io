@@ -66,9 +66,9 @@
             </div>
 
             <!-- Big headline (THIS is what you're missing) -->
-            <h2 class="about-title">
+            <h3 class="about-title">
               Curious about how things work, motivated to build them better
-            </h2>
+            </h3>
 
             <!-- Content -->
             <div class="about-content">
@@ -156,63 +156,159 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
     <!-- SECTION 3: PROJECTS -->
-    <section id="projects">
-      <div class="wrap">
-        <h2>Projects</h2>
-
-        <div class="grid two">
-          <div class="card">
-            <h3>
-              <a href="https://github.com/chanmesa-chhun/2024-S2-R-D-Adaptive-Network-Management" target="_blank">
-                Adaptive Network Management: Cell Tower Prioritization in Crisis
-              </a>
-            </h3>
-            <p>
-              R&D project with 2degrees focused on prioritising cell towers during disruptions using geospatial analysis and APIs.
-            </p>
-            <ul>
-              <li>Built data processing and ranking workflows (Python, QGIS)</li>
-              <li>Integrated APIs and supported demo/UI pipeline (PHP, cloud services)</li>
-              <li>Worked in Agile/Scrum with regular demos</li>
-            </ul>
-            <div class="tags">
-              <span class="pill">Python</span>
-              <span class="pill">QGIS</span>
-              <span class="pill">PHP</span>
-              <span class="pill">APIs</span>
-              <span class="pill">Azure</span>
-            </div>
+    <section id="projects" class="projects-section">
+      <div class="wrap projects-layout">
+        
+        <!-- LEFT (sticky) -->
+        <aside class="projects-left">
+          <div class="section-label">
+            <span class="label-accent"></span>
+            <span class="label-text">Projects</span>
           </div>
 
-          <div class="card">
+          <h2 class="projects-title">Selected work</h2>
+          <p class="projects-desc">
+            A few projects where I built practical features end-to-end — from data and APIs to UI.
+            Scroll to explore each one.
+          </p>
+        </aside>
+
+        <!-- RIGHT (stacking cards) -->
+        <div class="projects-right">
+          <article class="project-card" id="project-1">
+            <div class="project-card__head">
+              <h3 class="project-card__title">
+                Adaptive Network Management: Cell Tower Prioritization in Crisis
+              </h3>
+
+              <p class="project-card__subtitle">
+                R&D capstone with 2degrees focused on prioritising cell towers during disruptions using geospatial analysis and ranking logic.
+              </p>
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__desc">
+                I worked on building and refining a data pipeline that merges telecom tower coverage with supporting datasets,
+                then produces a ranked list of towers to help guide restoration decisions during outages.
+              </p>
+
+              <ul class="project-card__bullets">
+                <li>Built ranking workflows using Python + geospatial processing in QGIS</li>
+                <li>Integrated API-ready outputs to support demo/UI and reporting</li>
+                <li>Collaborated in Agile/Scrum with regular stakeholder demos and iteration</li>
+              </ul>
+
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">QGIS</span>
+                <span class="tag-pill">APIs</span>
+                <span class="tag-pill">Azure</span>
+                <span class="tag-pill">Git/GitHub</span>
+              </div>
+
+              <div class="project-card__links">
+                <a class="card-link" href="https://github.com/chanmesa-chhun/2024-S2-R-D-Adaptive-Network-Management" target="_blank" rel="noopener">
+                  View Repository
+                </a>
+              </div>
+            </div>
+
+            <!-- Optional: image strip at bottom (add screenshots later) -->
+            <div class="project-card__media">
+              <!-- Replace src with your screenshots -->
+              <!--
+              <img src="images/project1-1.png" alt="Map view of tower coverage" />
+              <img src="images/project1-2.png" alt="Ranking output preview" />
+              -->
+              <div class="project-card__media-placeholder">
+                Add screenshots here (map, UI demo, ranking output)
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card stack-card">
             <h3>
-              <a href="https://github.com/chanmesa-chhun/TuneTalk-Mesa" target="_blank">
+              <a href="https://github.com/chanmesa-chhun/TuneTalk-Mesa" target="_blank" rel="noopener">
                 TuneTalk: Social Networking Web App Based on Music
               </a>
             </h3>
             <p>
               Full-stack web app using Spotify data to power social discovery.
             </p>
+
             <ul>
-              <li>Built with MERN stack</li>
-              <li>Used Spotify APIs</li>
+              <li>MERN stack (MongoDB, Express, React, Node)</li>
+              <li>Spotify API integration</li>
               <li>Collaborated using Scrum</li>
             </ul>
+
             <div class="tags">
-              <span class="pill">MongoDB</span>
-              <span class="pill">Express</span>
               <span class="pill">React</span>
               <span class="pill">Node.js</span>
+              <span class="pill">Express</span>
               <span class="pill">Spotify API</span>
             </div>
-          </div>
+          </article>
+
+          <!-- Add more cards the same way -->
+
+          <article class="project-card stack-card">
+            <h3>
+              <a href="https://github.com/chanmesa-chhun/TuneTalk-Mesa" target="_blank" rel="noopener">
+                TuneTalk: Social Networking Web App Based on Music
+              </a>
+            </h3>
+            <p>
+              Full-stack web app using Spotify data to power social discovery.
+            </p>
+
+            <ul>
+              <li>MERN stack (MongoDB, Express, React, Node)</li>
+              <li>Spotify API integration</li>
+              <li>Collaborated using Scrum</li>
+            </ul>
+
+            <div class="tags">
+              <span class="pill">React</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Express</span>
+              <span class="pill">Spotify API</span>
+            </div>
+          </article>
+          
+          <article class="project-card stack-card">
+            <h3>
+              <a href="https://github.com/chanmesa-chhun/TuneTalk-Mesa" target="_blank" rel="noopener">
+                TuneTalk: Social Networking Web App Based on Music
+              </a>
+            </h3>
+            <p>
+              Full-stack web app using Spotify data to power social discovery.
+            </p>
+
+            <ul>
+              <li>MERN stack (MongoDB, Express, React, Node)</li>
+              <li>Spotify API integration</li>
+              <li>Collaborated using Scrum</li>
+            </ul>
+
+            <div class="tags">
+              <span class="pill">React</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Express</span>
+              <span class="pill">Spotify API</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
+
+    
 
     <!-- SECTION 4: SKILLS -->
     <section id="skills">
