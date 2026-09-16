@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,12 +9,30 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
   <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
+
 <body>
+  <header class="site-nav" id="siteNav">
+    <div class="wrap site-nav__inner">
+      <a href="#top" class="site-nav__brand">Chanmesa<span class="highlight">.</span></a>
+
+      <nav class="site-nav__links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
   <main>
     <!-- SECTION 1: HERO -->
     <section id="top" class="hero-section">
@@ -392,7 +411,7 @@
             </div>
             <div>
               <div class="contact-label">Call / Text</div>
-              <a class="contact-link" href="tel:+64000000000">+64 27 593 0535</a>
+              <a class="contact-link" href="tel:+64275930535">+64 27 593 0535</a>
             </div>
           </div>
 

@@ -210,3 +210,84 @@ if (btn) {
     }, 1800);
   });
 }
+
+/* ===========================
+   Site Nav: scroll shadow, active link, mobile toggle
+   =========================== */
+const siteNav = document.getElementById("siteNav");
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+const navLinkEls = document.querySelectorAll(".nav-link[href^='#']");
+
+// Shadow/background once page is scrolled
+window.addEventListener("scroll", () => {
+  if (!siteNav) return;
+  siteNav.classList.toggle("is-scrolled", window.scrollY > 12);
+});
+
+// Mobile menu toggle
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("is-open");
+    navToggle.classList.toggle("is-open", isOpen);
+    navToggle.setAttribute("aria-expanded", isOpen);
+  });
+}
+
+// Nav link clicks: close mobile menu + smooth scroll using our own animation
+navLinkEls.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    // Always close the mobile menu first
+    if (navLinks) navLinks.classList.remove("is-open");
+    if (navToggle) {
+      navToggle.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", false);
+    }
+
+    const href = link.getAttribute("href");
+    if (!href || !href.startsWith("#")) return; // let mailto: etc behave normally
+
+    const targetEl = document.getElementById(href.slice(1));
+    if (!targetEl) return;
+
+    e.preventDefault();
+
+    const snapIndex = snapSections.indexOf(targetEl);
+
+    if (snapIndex !== -1) {
+      // Target is a snap-managed section (hero/about/projects)
+      snapEnabled = true;
+      currentIndex = snapIndex;
+      isAnimating = true;
+      wheelBuffer = 0;
+      smoothScrollTo(targetEl.offsetTop, SNAP_DURATION);
+    } else {
+      // Contact (or anything outside the snap system) — scroll freely
+      snapEnabled = false;
+      isAnimating = true;
+      smoothScrollTo(targetEl.offsetTop, SNAP_DURATION);
+    }
+  });
+});
+
+// Highlight active section link on scroll
+const navSections = ["top", "about", "projects", "contact"]
+  .map((id) => document.getElementById(id))
+  .filter(Boolean);
+
+function setActiveNavLink() {
+  const y = window.scrollY + window.innerHeight * 0.35;
+  let current = navSections[0];
+
+  navSections.forEach((sec) => {
+    if (sec.offsetTop <= y) current = sec;
+  });
+
+  navLinkEls.forEach((link) => {
+    const href = link.getAttribute("href").replace("#", "");
+    link.classList.toggle("is-active", href === current.id);
+  });
+}
+
+window.addEventListener("scroll", setActiveNavLink, { passive: true });
+window.addEventListener("load", setActiveNavLink);
