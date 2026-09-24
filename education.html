@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Education background - Chanmesa Chhun." />
+  <title>Education | Chanmesa Chhun</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="site-nav" id="siteNav">
+    <div class="wrap site-nav__inner">
+      <a href="index.html" class="site-nav__brand">Chanmesa<span class="highlight">.</span></a>
+
+      <nav class="site-nav__links" id="navLinks">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="education.html" class="nav-link is-active">Education</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header page-header--education">
+      <div class="wrap">
+        <p class="page-header__eyebrow">Education</p>
+        <h1 class="page-header__title">Academic background</h1>
+        <p class="page-header__desc">
+          Formal study, coursework, and extracurricular involvement.
+        </p>
+      </div>
+    </div>
+
+    <section class="simple-page-section">
+      <div class="wrap">
+        <div class="timeline timeline--connected">
+          <article class="timeline-item">
+            <span class="timeline-item__dot" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10 12 5 2 10l10 5 10-5Z"/>
+                <path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/>
+              </svg>
+            </span>
+            <div class="timeline-item__head">
+              <span class="timeline-item__role">Bachelor of Computer and Information Sciences</span>
+              <span class="timeline-item__dates">In Progress</span>
+            </div>
+            <p class="timeline-item__org">Auckland University of Technology - Software Development</p>
+            <ul>
+              <li>Working with 2degrees on a real R&D capstone project (Adaptive Network Management)</li>
+              <li>Coursework spanning full-stack development, databases, APIs, and networking</li>
+              <li>Active member of WDCC, CSEA, and CSCI student clubs</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-item__dot" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10 12 5 2 10l10 5 10-5Z"/>
+                <path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/>
+              </svg>
+            </span>
+            <div class="timeline-item__head">
+              <span class="timeline-item__role">NCEA Level 3</span>
+              <span class="timeline-item__dates">Completed</span>
+            </div>
+            <p class="timeline-item__org">Rutherford College</p>
+            <ul>
+              <li>Peer mentoring</li>
+              <li>School librarian</li>
+              <li>Represented the school in football and badminton teams</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Chanmesa Chhun. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

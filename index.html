@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chanmesa Chhun - Software Development graduate and web & software developer based in Auckland, NZ." />
   <title>Chanmesa Chhun | Portfolio</title>
 
-  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
   <link
     rel="stylesheet"
@@ -16,16 +15,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
+
   <header class="site-nav" id="siteNav">
     <div class="wrap site-nav__inner">
       <a href="#top" class="site-nav__brand">Chanmesa<span class="highlight">.</span></a>
 
       <nav class="site-nav__links" id="navLinks">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -33,14 +34,14 @@
       </button>
     </div>
   </header>
-  <main>
-    <!-- SECTION 1: HERO -->
-    <section id="top" class="hero-section">
-      <div class="hero-layout">
 
-        <!-- LEFT: TEXT -->
+  <main>
+    <!-- SECTION: HERO -->
+    <section id="top" class="hero-section">
+      <div class="hero-bg-decor" aria-hidden="true"></div>
+      <div class="hero-layout">
         <div class="hero-text">
-          <p class="kicker">Final-year BCIS student • Auckland, NZ</p>
+          <p class="kicker">Software Development Graduate • Auckland, NZ</p>
 
           <h1>
             Hi, I’m <span class="highlight">Chanmesa</span><br/>
@@ -48,133 +49,110 @@
           </h1>
 
           <p class="hero-desc">
-            I build clean, mobile-friendly websites and practical software solutions.
-            I enjoy turning ideas into simple, usable products that solve real-world problems.
+            I build clean, mobile-friendly websites and practical software solutions,
+            from full-stack apps to data-driven tools, with a focus on turning ideas
+            into something people can actually use.
           </p>
-
-          <div class="cta">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="#contact">Contact Me</a>
-            <a class="btn ghost" href="https://github.com/chanmesa-chhun" target="_blank" rel="noopener">
-              GitHub
-            </a>
-          </div>
-
-          <div class="mini-tags">
-            <span class="chip">Python</span>
-            <span class="chip">Java</span>
-            <span class="chip">MERN stack</span>
-            <span class="chip">Agile</span>
-            <span class="chip">QGIS</span>
-          </div>
         </div>
 
-        <!-- RIGHT: IMAGE -->
         <div class="hero-media">
           <img src="mypic.jpg" alt="Photo of Chanmesa Chhun" />
         </div>
       </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
     </section>
 
-    <!-- SECTION: ABOUT -->
+    <!-- SECTION: ABOUT (teaser) -->
     <section id="about" class="about-section">
+      <div class="section-decor section-decor--dots" aria-hidden="true"></div>
       <div class="wrap">
         <div class="about-layout">
 
-          <!-- LEFT -->
           <div class="about-left">
             <div class="section-label">
               <span class="label-accent"></span>
               <span class="label-text">About Me</span>
             </div>
 
-            <!-- Big headline (THIS is what you're missing) -->
             <h3 class="about-title">
               Curious about how things work, motivated to build them better
             </h3>
 
-            <!-- Content -->
             <div class="about-content">
               <p>
-                I enjoy understanding how systems work and finding practical ways to 
-                improve them. Whether I’m working on university projects or personal 
-                ideas, I’m motivated by solving problems and creating solutions that 
-                are clear, useful, and well thought out.
-              </p>
-
-              <p>
-                I work confidently both independently and as part of a team, and I 
-                value asking questions and learning from others. I bring a calm, 
-                focused mindset to my work and continuously look for opportunities 
-                to grow my technical skills and personal development.
+                I enjoy understanding how systems work and finding practical ways to
+                improve them, whether that's a university capstone or a personal project.
               </p>
             </div>
+
+            <a class="btn primary section-cta" href="about.html">Read More About Me</a>
           </div>
-          <!-- RIGHT -->
+
           <div class="about-right">
-            <p class="marquee-kicker">Technical Skills</p>
+            <div class="skills-panel">
+              <p class="marquee-kicker">Technical Skills</p>
+              <div class="marquee">
+                <div class="marquee__track">
+                  <span class="skill-pill">Java</span>
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">PHP</span>
+                  <span class="skill-pill">JavaScript</span>
+                  <span class="skill-pill">C</span>
+                  <span class="skill-pill">C++</span>
+                  <span class="skill-pill">SQL</span>
+                </div>
+                <div class="marquee__track" aria-hidden="true">
+                  <span class="skill-pill">Java</span>
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">PHP</span>
+                  <span class="skill-pill">JavaScript</span>
+                  <span class="skill-pill">C</span>
+                  <span class="skill-pill">C++</span>
+                  <span class="skill-pill">SQL</span>
+                </div>
+              </div>
 
-            <!-- Programming Languages -->
-            <div class="marquee">
-              <div class="marquee__track">
-                <span class="skill-pill">Java</span>
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">PHP</span>
-                <span class="skill-pill">JavaScript</span>
-                <span class="skill-pill">C</span>
-                <span class="skill-pill">C++</span>
-                <span class="skill-pill">SQL</span>
+              <p class="marquee-kicker" style="margin-top:16px;">Frameworks & Stacks</p>
+              <div class="marquee">
+                <div class="marquee__track">
+                  <span class="skill-pill">React</span>
+                  <span class="skill-pill">MongoDB</span>
+                  <span class="skill-pill">Node.js</span>
+                  <span class="skill-pill">Express</span>
+                  <span class="skill-pill">MERN</span>
+                  <span class="skill-pill">REST APIs</span>
+                </div>
+                <div class="marquee__track" aria-hidden="true">
+                  <span class="skill-pill">React</span>
+                  <span class="skill-pill">MongoDB</span>
+                  <span class="skill-pill">Node.js</span>
+                  <span class="skill-pill">Express</span>
+                  <span class="skill-pill">MERN</span>
+                  <span class="skill-pill">REST APIs</span>
+                </div>
               </div>
-              <div class="marquee__track" aria-hidden="true">
-                <span class="skill-pill">Java</span>
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">PHP</span>
-                <span class="skill-pill">JavaScript</span>
-                <span class="skill-pill">C</span>
-                <span class="skill-pill">C++</span>
-                <span class="skill-pill">SQL</span>
-              </div>
-            </div>
 
-            <!-- Frameworks / Stacks -->
-            <p class="marquee-kicker" style="margin-top:16px;">Frameworks & Stacks</p>
-            <div class="marquee">
-              <div class="marquee__track">
-                <span class="skill-pill">React</span>
-                <span class="skill-pill">MongoDB</span>
-                <span class="skill-pill">Node.js</span>
-                <span class="skill-pill">Express</span>
-                <span class="skill-pill">MERN</span>
-                <span class="skill-pill">REST APIs</span>
-              </div>
-              <div class="marquee__track" aria-hidden="true">
-                <span class="skill-pill">React</span>
-                <span class="skill-pill">MongoDB</span>
-                <span class="skill-pill">Node.js</span>
-                <span class="skill-pill">Express</span>
-                <span class="skill-pill">MERN</span>
-                <span class="skill-pill">REST APIs</span>
-              </div>
-            </div>
-
-            <!-- Tools -->
-            <p class="marquee-kicker" style="margin-top:16px;">Tools</p>
-            <div class="marquee">
-              <div class="marquee__track">
-                <span class="skill-pill">Git/GitHub</span>
-                <span class="skill-pill">QGIS</span>
-                <span class="skill-pill">Office360</span>
-                <span class="skill-pill">Trello</span>
-                <span class="skill-pill">VS Code</span>
-                <span class="skill-pill">Azure</span>
-              </div>
-              <div class="marquee__track" aria-hidden="true">
-                <span class="skill-pill">Git/GitHub</span>
-                <span class="skill-pill">QGIS</span>
-                <span class="skill-pill">Office360</span>
-                <span class="skill-pill">Trello</span>
-                <span class="skill-pill">VS Code</span>
-                <span class="skill-pill">Azure</span>
+              <p class="marquee-kicker" style="margin-top:16px;">Tools</p>
+              <div class="marquee">
+                <div class="marquee__track">
+                  <span class="skill-pill">Git/GitHub</span>
+                  <span class="skill-pill">QGIS</span>
+                  <span class="skill-pill">Unity</span>
+                  <span class="skill-pill">Trello</span>
+                  <span class="skill-pill">VS Code</span>
+                  <span class="skill-pill">Azure</span>
+                </div>
+                <div class="marquee__track" aria-hidden="true">
+                  <span class="skill-pill">Git/GitHub</span>
+                  <span class="skill-pill">QGIS</span>
+                  <span class="skill-pill">Unity</span>
+                  <span class="skill-pill">Trello</span>
+                  <span class="skill-pill">VS Code</span>
+                  <span class="skill-pill">Azure</span>
+                </div>
               </div>
             </div>
           </div>
@@ -182,325 +160,137 @@
       </div>
     </section>
 
-
-    <!-- SECTION 3: PROJECTS -->
-    <section id="projects" class="projects-section">
-      <div class="wrap projects-layout">
-        
-        <!-- LEFT (sticky) -->
-        <aside class="projects-left">
+    <!-- SECTION: EXPERIENCE (teaser) -->
+    <section id="experience" class="feature-section feature-section--experience">
+      <div class="section-decor section-decor--lines" aria-hidden="true"></div>
+      <div class="wrap feature-layout">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="7" width="18" height="13" rx="2"/>
+            <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+            <path d="M3 12h18"/>
+          </svg>
+        </div>
+        <div class="feature-text">
           <div class="section-label">
             <span class="label-accent"></span>
-            <span class="label-text">Projects</span>
+            <span class="label-text">Experience</span>
           </div>
 
-          <h2 class="projects-title">Selected work</h2>
-          <p class="projects-desc">
-            A few projects where I built practical features end-to-end — from data and APIs to UI.
-            Scroll to explore each one.
-          </p>
-        </aside>
+          <h3 class="section-title">Learning by doing</h3>
 
-        <!-- RIGHT (stacking cards) -->
-        <div class="projects-right">
-          <article class="project-card" id="project-1">
-            <div class="project-card__head">
-              <h3 class="project-card__title">
-                Adaptive Network Management: Cell Tower Prioritization in Crisis
-              </h3>
+          <div class="about-content">
+            <p>
+              Alongside my studies, I've picked up hands-on experience through applied
+              research, customer-facing roles, and self-directed technical work, building
+              things end to end rather than just studying them in theory.
+            </p>
+          </div>
 
-              <p class="project-card__subtitle">
-                R&D capstone with 2degrees focused on prioritising cell towers during disruptions using geospatial analysis and ranking logic.
-              </p>
-            </div>
-
-            <div class="project-card__body">
-              <p class="project-card__desc">
-                I worked on building and refining a data pipeline that merges telecom tower coverage with supporting datasets,
-                then produces a ranked list of towers to help guide restoration decisions during outages.
-              </p>
-
-              <ul class="project-card__bullets">
-                <li>Built ranking workflows using Python + geospatial processing in QGIS</li>
-                <li>Integrated API-ready outputs to support demo/UI and reporting</li>
-                <li>Collaborated in Agile/Scrum with regular stakeholder demos and iteration</li>
-              </ul>
-
-              <div class="project-card__tags" aria-label="Technologies used">
-                <span class="tag-pill">Python</span>
-                <span class="tag-pill">QGIS</span>
-                <span class="tag-pill">APIs</span>
-                <span class="tag-pill">Azure</span>
-                <span class="tag-pill">Git/GitHub</span>
-              </div>
-
-              <div class="project-card__links">
-                <a class="card-link" href="https://github.com/chanmesa-chhun/2024-S2-R-D-Adaptive-Network-Management" target="_blank" rel="noopener">
-                  View Repository
-                </a>
-              </div>
-            </div>
-
-            <!-- Optional: image strip at bottom (add screenshots later) -->
-            <div class="project-card__media">
-              <!-- Replace src with your screenshots -->
-              <!--
-              <img src="images/project1-1.png" alt="Map view of tower coverage" />
-              <img src="images/project1-2.png" alt="Ranking output preview" />
-              -->
-              <div class="project-card__media-placeholder">
-                To be added (map, UI demo, ranking output)
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" id="project-2">
-            <div class="project-card__head">
-              <h3 class="project-card__title">
-                TuneTalk: Music-Driven Social Discovery Platform
-              </h3>
-
-              <p class="project-card__subtitle">
-                Full-stack web application exploring how shared music taste can enable meaningful social connection using Spotify data.
-              </p>
-            </div>
-
-            <div class="project-card__body">
-              <p class="project-card__desc">
-                TuneTalk explores how shared music taste can become a meaningful signal for social discovery.
-                By combining Spotify listening data with a modern web stack, the project focuses on turning
-                external APIs into human-centred features rather than raw data displays.
-              </p>
-
-              <ul class="project-card__bullets">
-                <li>Designed social discovery features powered by Spotify listening behaviour</li>
-                <li>Built RESTful API integrations to fetch, process, and persist user music data</li>
-                <li>Developed a responsive full-stack web app using the MERN stack</li>
-              </ul>
-
-              <div class="project-card__tags" aria-label="Technologies used">
-                <span class="tag-pill">MongoDB</span>
-                <span class="tag-pill">Express</span>
-                <span class="tag-pill">React</span>
-                <span class="tag-pill">Node.js</span>
-                <span class="tag-pill">Spotify API</span>
-              </div>
-
-              <div class="project-card__links">
-                <a class="card-link" href="https://github.com/chanmesa-chhun/TuneTalk-Mesa" target="_blank" rel="noopener">
-                  View Repository
-                </a>
-              </div>
-            </div>
-
-            <!-- Optional: image strip at bottom -->
-            <div class="project-card__media">
-              <!--
-              <img src="images/tunetalk-feed.png" alt="TuneTalk social feed" />
-              <img src="images/tunetalk-profile.png" alt="User profile with music data" />
-              -->
-              <div class="project-card__media-placeholder">
-                To be added (feed, profile, Spotify data visualisation)
-              </div>
-            </div>
-          </article>
-
-          <!-- Add more cards the same way -->
-
-          <article class="project-card" id="project-3">
-            <div class="project-card__head">
-              <h3 class="project-card__title">
-                Personal Research: Exploring Systems, Data, and Automation
-              </h3>
-
-              <p class="project-card__subtitle">
-                Self-directed technical research focused on understanding how complex systems behave, scale, and can be improved through code.
-              </p>
-            </div>
-
-            <div class="project-card__body">
-              <p class="project-card__desc">
-                Alongside my formal studies, I actively explore technical topics through personal research projects.
-                These experiments allow me to test ideas, deepen my understanding of systems, and learn technologies
-                beyond structured coursework.
-              </p>
-
-              <ul class="project-card__bullets">
-                <li>Investigated data processing pipelines, automation scripts, and system behaviour</li>
-                <li>Experimented with APIs, scripting, and small prototypes to validate ideas</li>
-                <li>Used research-driven learning to strengthen problem-solving and technical intuition</li>
-              </ul>
-
-              <div class="project-card__tags" aria-label="Topics explored">
-                <span class="tag-pill">Python</span>
-                <span class="tag-pill">Data Processing</span>
-                <span class="tag-pill">APIs</span>
-                <span class="tag-pill">Automation</span>
-                <span class="tag-pill">Systems Thinking</span>
-              </div>
-
-              <div class="project-card__links">
-                <!-- Optional: link later if you want -->
-                <!--
-                <a class="card-link" href="#" target="_blank" rel="noopener">
-                  View Notes / Experiments
-                </a>
-                -->
-              </div>
-            </div>
-
-            <!-- Optional: visual research artifacts -->
-            <div class="project-card__media">
-              <div class="project-card__media-placeholder">
-                To be added (diagrams, scripts, experiments, notes)
-              </div>
-            </div>
-          </article>
-
+          <a class="btn primary section-cta" href="experience.html">Read More About My Experience</a>
         </div>
       </div>
     </section>
 
-    
-    
-    <!-- SECTION 4: SKILLS 
-    <section id="skills">
+    <!-- SECTION: EDUCATION (teaser) -->
+    <section id="education" class="feature-section feature-section--education">
+      <div class="section-decor section-decor--dots" aria-hidden="true"></div>
+      <div class="wrap feature-layout feature-layout--reverse">
+        <div class="feature-text">
+          <div class="section-label">
+            <span class="label-accent"></span>
+            <span class="label-text">Education</span>
+          </div>
+
+          <h3 class="section-title">Bachelor of Computer and Information Sciences</h3>
+
+          <div class="about-content">
+            <p>
+              Software Development graduate from Auckland University of Technology,
+              with coursework spanning full-stack development, databases, APIs, and
+              network-focused software projects.
+            </p>
+          </div>
+
+          <a class="btn primary section-cta" href="education.html">Read More About My Education</a>
+        </div>
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M22 10 12 5 2 10l10 5 10-5Z"/>
+            <path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PROJECTS (teaser) -->
+    <section id="projects" class="projects-teaser-section">
+      <div class="section-decor section-decor--grid" aria-hidden="true"></div>
       <div class="wrap">
-        <h2>Technical Skills</h2>
+        <div class="section-label">
+          <span class="label-accent"></span>
+          <span class="label-text">Projects</span>
+        </div>
 
-        <div class="grid two">
-          <div class="card">
-            <h3>Languages</h3>
-            <p>Java, Python, PHP, JavaScript, C, C++</p>
-          </div>
-          <div class="card">
-            <h3>Web & Frameworks</h3>
-            <p>HTML, CSS, JavaScript • MERN</p>
-          </div>
-          <div class="card">
-            <h3>Tools</h3>
-            <p>GitHub, Trello, QGIS</p>
-          </div>
-          <div class="card">
-            <h3>Cloud & APIs</h3>
-            <p>Google APIs, Spotify APIs, Microsoft Azure</p>
-          </div>
+        <h2 class="section-title">Selected work</h2>
+        <p class="projects-desc">
+          A few projects where I turned ideas into practical, working systems.
+        </p>
+
+        <div class="projects-teaser-grid">
+          <article class="project-teaser-card project-teaser-card--blue">
+            <span class="project-teaser-card__tag">Python · QGIS</span>
+            <h3>Adaptive Network Management</h3>
+            <p>Prioritising cell towers during network disruptions using geospatial data and ranking logic.</p>
+            <a class="card-link" href="projects.html#project-1">Read More →</a>
+          </article>
+
+          <article class="project-teaser-card project-teaser-card--green">
+            <span class="project-teaser-card__tag">MERN · Spotify API</span>
+            <h3>TuneTalk</h3>
+            <p>A social discovery platform built around shared music taste, powered by Spotify data.</p>
+            <a class="card-link" href="projects.html#project-2">Read More →</a>
+          </article>
+
+          <article class="project-teaser-card project-teaser-card--purple">
+            <span class="project-teaser-card__tag">Unity · C#</span>
+            <h3>Evolutionary Algorithms AI</h3>
+            <p>3D agent simulations exploring genetic algorithms for autonomous behaviour and model evolution.</p>
+            <a class="card-link" href="projects.html#project-3">Read More →</a>
+          </article>
+
+          <article class="project-teaser-card project-teaser-card--blue">
+            <span class="project-teaser-card__tag">Python · Automation</span>
+            <h3>Personal Research</h3>
+            <p>Self-directed exploration of systems, data pipelines, and automation.</p>
+            <a class="card-link" href="projects.html#project-4">Read More →</a>
+          </article>
+        </div>
+
+        <a class="btn primary section-cta" href="projects.html">View All Projects</a>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT (teaser) -->
+    <section id="contact" class="contact-teaser-section">
+      <div class="section-decor section-decor--dots" aria-hidden="true"></div>
+      <div class="wrap contact-teaser__wrap">
+        <div class="section-label">
+          <span class="label-accent"></span>
+          <span class="label-text">Contact</span>
+        </div>
+        <h2 class="section-title">Let's build something together</h2>
+        <p class="contact-teaser__desc">
+          Open to graduate roles, internships, and freelance website builds. Reach out
+          by phone, email, or connect on LinkedIn. I usually reply within 24 hours.
+        </p>
+        <div class="contact-teaser__actions">
+          <a class="btn primary" href="contact.html">Get In Touch</a>
+          <a class="btn" href="mailto:mesachan50@gmail.com">Email Me Directly</a>
         </div>
       </div>
     </section>
-    -->
 
-    <section id="contact" class="contact-split">
-      <div class="wrap contact-split__wrap">
-
-        <!-- LEFT -->
-        <div class="contact-split__left">
-          <div class="section-label">
-            <span class="label-accent"></span>
-            <span class="label-text">Contact</span>
-          </div>
-          <h2 class="contact-split__title">Get in touch with me </h2>
-          <div class="contact-split__rule"></div>
-
-          <div class="contact-item">
-            <div class="contact-icon" aria-hidden="true">
-              <!-- phone icon -->
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3 5.18 2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72c.12.86.32 1.7.59 2.5a2 2 0 0 1-.45 2.11L9.09 10.91a16 16 0 0 0 4 4l1.58-1.16a2 2 0 0 1 2.11-.45c.8.27 1.64.47 2.5.59A2 2 0 0 1 22 16.92z"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-label">Call / Text</div>
-              <a class="contact-link" href="tel:+64275930535">+64 27 593 0535</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon" aria-hidden="true">
-              <!-- mail icon -->
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16v16H4z"/>
-                <path d="m22 6-10 7L2 6"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-label">Email</div>
-              <a class="contact-link" href="mailto:mesachan50@gmail.com">mesachan50@gmail.com</a>
-            </div>
-          </div>
-
-          <div class="contact-social">
-            <div class="contact-social__title">Social</div>
-              <div class="contact-social__icons">
-                <div class="social-links">
-                  <a
-                    href="https://github.com/chanmesa-chhun"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="GitHub"
-                    class="social-icon"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-
-                  <a
-                    href="https://www.linkedin.com/in/chanmesa-chhun/"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="LinkedIn"
-                    class="social-icon"
-                  >
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-              </div>
-            </div>
-          </div>
-
-          <p class="social-handle">
-            @chanmesa
-          </p>
-        </div>
-
-        <!-- RIGHT -->
-        <aside class="contact-card">
-          <h3 class="contact-card__title">Open to <span class="highlight">Opportunities</span></h3>
-          <div class="contact-card__accent"></div>
-
-          <p class="contact-card__text">
-            I’m currently open to graduate roles, internships, and freelance website builds.
-            If you have an opportunity or just want to connect, send me a quick message.
-          </p>
-
-          <div class="contact-card__rows">
-            <div class="info-row">
-              <div class="info-k">Based in</div>
-              <div class="info-v">Auckland, NZ</div>
-            </div>
-            <div class="info-row">
-              <div class="info-k">Best for</div>
-              <div class="info-v">Websites (Frontend & Backend) • Software • Data/geo projects</div>
-            </div>
-            <div class="info-row">
-              <div class="info-k">Response</div>
-              <div class="info-v">Within 24 hours</div>
-            </div>
-          </div>
-
-          <div class="contact-card__actions">
-            <a class="btn primary" href="mailto:mesachan50@gmail.com?subject=Hi%20Chanmesa%20%E2%80%93%20Let%E2%80%99s%20connect">
-              Email Me
-            </a>
-            <button class="btn" type="button" id="copyEmailBtn">
-              Copy Email
-            </button>
-          </div>
-
-          <p class="contact-card__tiny" id="copyEmailHint" aria-live="polite"></p>
-        </aside>
-
-      </div>
-    </section>
-      
   </main>
   <script src="script.js"></script>
 </body>

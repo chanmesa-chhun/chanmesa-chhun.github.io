@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selected projects by Chanmesa Chhun." />
+  <title>Projects | Chanmesa Chhun</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="site-nav" id="siteNav">
+    <div class="wrap site-nav__inner">
+      <a href="index.html" class="site-nav__brand">Chanmesa<span class="highlight">.</span></a>
+
+      <nav class="site-nav__links" id="navLinks">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="projects.html" class="nav-link is-active">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header page-header--projects">
+      <div class="wrap">
+        <p class="page-header__eyebrow">Projects</p>
+        <h1 class="page-header__title">Selected work</h1>
+        <p class="page-header__desc">
+          A few projects where I built practical features end-to-end, from data and APIs to UI.
+        </p>
+      </div>
+    </div>
+
+    <section id="projects" class="projects-section">
+      <div class="wrap projects-layout">
+
+        <aside class="projects-left">
+          <div class="section-label">
+            <span class="label-accent"></span>
+            <span class="label-text">Projects</span>
+          </div>
+
+          <p class="projects-desc">
+            Scroll to explore each project in more depth.
+          </p>
+        </aside>
+
+        <div class="projects-right">
+          <article class="project-card project-card--blue" id="project-1">
+            <div class="project-card__head">
+              <h3 class="project-card__title">
+                Adaptive Network Management: Cell Tower Prioritization in Crisis
+              </h3>
+
+              <p class="project-card__subtitle">
+                R&D capstone with 2degrees focused on prioritising cell towers during disruptions using geospatial analysis and ranking logic.
+              </p>
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__desc">
+                I worked on building and refining a data pipeline that merges telecom tower coverage with supporting datasets,
+                then produces a ranked list of towers to help guide restoration decisions during outages.
+              </p>
+
+              <ul class="project-card__bullets">
+                <li>Designed Python data pipelines and REST APIs to process and analyse large cell tower and geospatial datasets</li>
+                <li>Developed ranking and scoring algorithms to support data-driven emergency response decisions</li>
+                <li>Collaborated in a four-person Agile (SCRUM) team across development, testing, documentation, and stakeholder feedback</li>
+                <li>Delivered and documented an end-to-end solution for an industry client, ensuring usability and alignment with operational requirements</li>
+              </ul>
+
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">QGIS</span>
+                <span class="tag-pill">APIs</span>
+                <span class="tag-pill">Azure</span>
+                <span class="tag-pill">Git/GitHub</span>
+              </div>
+
+              <div class="project-card__links">
+                <a class="card-link" href="https://github.com/chanmesa-chhun/2024-S2-R-D-Adaptive-Network-Management" target="_blank" rel="noopener">
+                  View Repository
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <article class="project-card project-card--green" id="project-2">
+            <div class="project-card__head">
+              <h3 class="project-card__title">
+                TuneTalk: Music-Driven Social Discovery Platform
+              </h3>
+
+              <p class="project-card__subtitle">
+                Full-stack web application exploring how shared music taste can enable meaningful social connection using Spotify data.
+              </p>
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__desc">
+                TuneTalk explores how shared music taste can become a meaningful signal for social discovery.
+                By combining Spotify listening data with a modern web stack, the project focuses on turning
+                external APIs into human-centred features rather than raw data displays.
+              </p>
+
+              <ul class="project-card__bullets">
+                <li>Developed a full-stack MERN web application integrated with the Spotify REST API for music discovery and user matching</li>
+                <li>Designed MongoDB data structures and implemented API-driven features for user profiles, preferences, and content discovery</li>
+                <li>Collaborated in a five-person Agile (SCRUM) team using GitHub and Trello, contributing to development, testing, and performance improvements</li>
+              </ul>
+
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag-pill">MongoDB</span>
+                <span class="tag-pill">Express</span>
+                <span class="tag-pill">React</span>
+                <span class="tag-pill">Node.js</span>
+                <span class="tag-pill">Spotify API</span>
+              </div>
+
+              <div class="project-card__links">
+                <a class="card-link" href="https://github.com/chanmesa-chhun/TuneTalk-Mesa" target="_blank" rel="noopener">
+                  View Repository
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <article class="project-card project-card--purple" id="project-3">
+            <div class="project-card__head">
+              <h3 class="project-card__title">
+                Evolutionary Algorithms AI: 3D Agent Simulations
+              </h3>
+
+              <p class="project-card__subtitle">
+                Personal research project exploring genetic algorithms for autonomous behaviour and model evolution in a 3D environment.
+              </p>
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__desc">
+                An ongoing self-directed project built in Unity, simulating populations of agents that evolve their
+                behaviour over generations. The focus is on understanding how simple genetic rules can produce
+                complex, adaptive behaviour without being explicitly programmed.
+              </p>
+
+              <ul class="project-card__bullets">
+                <li>Developed 3D agent simulations in Unity using C#, implementing genetic algorithms for autonomous behaviour and model evolution</li>
+                <li>Built visualisation and analysis tools to evaluate agent performance and optimise behaviour in complex 3D environments</li>
+              </ul>
+
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag-pill">Unity</span>
+                <span class="tag-pill">C#</span>
+                <span class="tag-pill">Genetic Algorithms</span>
+                <span class="tag-pill">Simulation</span>
+              </div>
+
+              <div class="project-card__links"></div>
+            </div>
+
+          </article>
+
+          <article class="project-card project-card--blue" id="project-4">
+            <div class="project-card__head">
+              <h3 class="project-card__title">
+                Personal Research: Exploring Systems, Data, and Automation
+              </h3>
+
+              <p class="project-card__subtitle">
+                Self-directed technical research focused on understanding how complex systems behave, scale, and can be improved through code.
+              </p>
+            </div>
+
+            <div class="project-card__body">
+              <p class="project-card__desc">
+                Alongside my formal studies, I actively explore technical topics through personal research projects.
+                These experiments allow me to test ideas, deepen my understanding of systems, and learn technologies
+                beyond structured coursework.
+              </p>
+
+              <ul class="project-card__bullets">
+                <li>Investigated data processing pipelines, automation scripts, and system behaviour</li>
+                <li>Experimented with APIs, scripting, and small prototypes to validate ideas</li>
+                <li>Used research-driven learning to strengthen problem-solving and technical intuition</li>
+              </ul>
+
+              <div class="project-card__tags" aria-label="Topics explored">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">Data Processing</span>
+                <span class="tag-pill">APIs</span>
+                <span class="tag-pill">Automation</span>
+              </div>
+
+              <div class="project-card__links"></div>
+            </div>
+
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Chanmesa Chhun. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
